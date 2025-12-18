@@ -1,16 +1,16 @@
-\#Simple POS System
+## Simple POS System
 
 
 
-A simple POS (Point of Sale) system built for learning and demonstration purposes, using \*\*ReactJS (Frontend)\*\*, \*\*.NET/C# (Backend)\*\*, \*\*Docker\*\*, and \*\*Nginx\*\*.
+A simple POS (Point of Sale) system built for learning and demonstration purposes, using **ReactJS (Frontend)**, **.NET/C# (Backend)**, **Docker**, and **Nginx**.
 
 
 
 This project is suitable for:
 
-\* Practicing Docker \& deployment basics
+* Practicing Docker & deployment basics
 
-\* Interview demonstrations (Backend / Fullstack)
+* Interview demonstrations (Backend / Fullstack)
 
 
 
@@ -18,11 +18,11 @@ This project is suitable for:
 
 
 
-\## 📦 Tech Stack
+## 📦 Tech Stack
 
 
 
-\*\*Frontend\*\*
+**Frontend**
 
 
 
@@ -34,7 +34,7 @@ This project is suitable for:
 
 
 
-\*\*Backend\*\*
+**Backend**
 
 
 
@@ -44,7 +44,7 @@ This project is suitable for:
 
 
 
-\*\*Infrastructure\*\*
+**Infrastructure**
 
 
 
@@ -58,7 +58,7 @@ This project is suitable for:
 
 
 
-\## 📁 Project Structure
+## 📁 Project Structure
 
 
 
@@ -96,7 +96,7 @@ VISNAM\_Simple\_POS\_System/
 
 
 
-\## ⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 
 
@@ -104,9 +104,9 @@ Make sure you have installed:
 
 
 
-\* \*\*Docker Desktop\*\* (Windows / macOS / Linux)
+* **Docker Desktop** (Windows / macOS / Linux)
 
-\* \*\*Git\*\*
+* **Git**
 
 
 
@@ -126,13 +126,11 @@ docker compose version
 
 ---
 
-
-
-\## 🚀 How to Run the Project (Docker)
+## 🚀 How to Run the Project (Docker)
 
 
 
-\### 1️⃣ Clone the repository
+### 1️⃣ Clone the repository
 
 
 
@@ -140,7 +138,7 @@ docker compose version
 
 git clone https://github.com/unique-idea/Simple-POS-Realtime.git
 
-cd VISNAM\_Simple\_POS\_System
+cd VISNAM_Simple_POS_System
 
 ```
 
@@ -149,8 +147,7 @@ cd VISNAM\_Simple\_POS\_System
 ---
 
 
-
-\### 2️⃣ Build \& run with Docker Compose
+### 2️⃣ Build & run with Docker Compose
 
 
 
@@ -166,11 +163,11 @@ Docker will:
 
 
 
-\* Build the \*\*Frontend\*\* React app
+* Build the **Frontend** React app
 
-\* Build the \*\*Backend\*\* ASP.NET Core API
+* Build the **Backend** ASP.NET Core API
 
-\* Run services using containers
+* Run services using containers
 
 
 
@@ -178,7 +175,7 @@ Docker will:
 
 
 
-\### 3️⃣ Access the application
+### 3️⃣ Access the application
 
 
 
@@ -186,11 +183,11 @@ Docker will:
 
 | ----------- | -------------------------------------------------------------------------------- |
 
-| Frontend  | \[http://localhost:5173/order] (For Order Screen)                 |
+| Frontend  |[http://localhost:5173/order] (For Order Screen)                 |
 
-|        | \[http://localhost:5173/realtime] (For Realtime Screen)    |
+|        | [http://localhost:5173/realtime] (For Realtime Screen)    |
 
-| Backend API | \[http://localhost:5000/swagger/imdex.html](http://localhost:5000/swagger/index.html)                     |
+| Backend API | [http://localhost:5000/swagger/imdex.html](http://localhost:5000/swagger/index.html)                     |
 
 
 
@@ -202,7 +199,7 @@ Docker will:
 
 
 
-\## 🧪 Test Docker Installation (Optional)
+## 🧪 Test Docker Installation (Optional)
 
 
 
@@ -234,7 +231,7 @@ Hello from Docker!
 
 
 
-\## 🛠 Common Commands
+## 🛠 Common Commands
 
 
 
@@ -276,19 +273,17 @@ docker ps
 
 ---
 
-
-
-\## 🧠 Key Features
+## 🧠 Key Features
 
 
 
-\* RESTful API architecture
+* RESTful API architecture
 
-\* Dockerized frontend \& backend
+* Dockerized frontend & backend
 
-\* Nginx used for serving production React build
+* Nginx used for serving production React build
 
-\* Clean separation between FE \& BE
+* Clean separation between FE & BE
 
 
 
@@ -296,21 +291,21 @@ docker ps
 
 
 
-\## 🎥 Video Demo Link And Overview How To Run Project
+## 🎥 Video Demo Link and Overview How To Run Project
 
 
 
-\*\*Video Demo:\*\*  
+**Video Demo:**  
 
-👉 \[Watch demo video on Google Drive](https://drive.google.com/file/d/XXXXXXXX/view) 
-
-
+👉 [Watch demo video on Google Drive](https://drive.google.com/file/d/XXXXXXXX/view) 
 
 
 
-\*\*Overview Step\*\*
 
-1\. \*\*Clone the source code:\*\*
+
+**Overview Step**
+
+1. **Clone the source code:**
 
 ```bash
 
@@ -320,17 +315,17 @@ git clone https://github.com/unique-idea/Simple-POS-Realtime.git
 
 
 
-2\. \*\*Navigate to the main project folder:\*\*
+2. **Navigate to the main project folder:**
 
 ```bash
 
-cd VISNAM\_Simple\_POS\_System
+cd VISNAM_Simple_POS_System
 
 ```
 
 
 
-3\. \*\*Run Docker Compose:\*\*
+3. **Run Docker Compose:**
 
 ```bash
 
@@ -342,11 +337,11 @@ docker-compose up -d --build
 
 
 
-\## 🌐 Access the Application
+## 🌐 Access the Application
 
 
 
-\- \*\*Frontend (FE):\*\*
+- **Frontend (FE):**
 
 &nbsp; - Order Screen: http://localhost:5173/order  
 
@@ -354,7 +349,7 @@ docker-compose up -d --build
 
 
 
-\- \*\*Backend (BE):\*\*
+- **Backend (BE):**
 
 &nbsp; - Swagger API: http://localhost:5000/swagger/index.html  
 
@@ -364,23 +359,23 @@ docker-compose up -d --build
 
 
 
-\## 🧪 How to Use the System
+## 🧪 How to Use the System
 
 
 
-1\. Click on a product to add it to the cart.  
+1. Click on a product to add it to the cart.  
 
 &nbsp;  Clicking the same product multiple times will increase its quantity in the cart.
 
 
 
-2\. Click \*\*"Check Out"\*\* to create a new order.
+2. Click **"Check Out"** to create a new order.
 
 
 
-3\. Open the \*\*Realtime Screen\*\* to see the new order appear immediately.  
+3. Open the **Realtime Screen** to see the new order appear immediately.  
 
-&nbsp;  \*(Tip: Open both screens side by side to observe real-time updates.)\*
+&nbsp;  *(Tip: Open both screens side by side to observe real-time updates.)*
 
 
 
@@ -388,7 +383,7 @@ docker-compose up -d --build
 
 
 
-\## 🛑 Stop the Application
+## 🛑 Stop the Application
 
 
 
