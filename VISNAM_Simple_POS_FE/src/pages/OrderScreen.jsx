@@ -51,7 +51,7 @@ const handleCheckout = async () => {
     setCartItems([]);
 
     } catch (error) {
-      console.error("Error Occured Calling API:", error);
+      console.error("Error Occured While Calling API:", error);
       alert("Checkout Failed!");
     }finally{
         setIsSubmitting(false);
@@ -84,18 +84,16 @@ const styles = {
     gap: "10px"
   },
   left: {
-    flex: 7,
-    display: "flex",
+    flex: 4,
     borderRight: "1px solid #ccc",
     overflowY: "auto",
-    minWidth: 0,
+    textAlign: "left",
   },
   right: {
-    flex: 3,
+    flex: 6,
     paddingLeft: "16px",
-    display: "flex",
     flexDirection: "column",
-    minWidth: 0,
+    paddingRight: "50px",
     
   }
 };

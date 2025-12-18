@@ -41,22 +41,19 @@ builder.Services.AddSignalR();
 
 var app = builder.Build();
 
+app.UseRouting();
+
+app.UseCors("AllowReactApp");
 
 app.UseSwagger();
 app.UseSwaggerUI();
-
-
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseCors("AllowReactApp");
-
 app.MapHub<SystemHub>("api/v1/hubs/orders");
 
-app.UseRouting();
 
 
 app.Run();

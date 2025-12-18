@@ -19,34 +19,47 @@ import { getProducts } from "../services/api";
     });
     }, [])
 
-    if(loading) return <p>Loading products...</p>;
-    if(error) return <p style={{color: "red"}}>{error}</p>;
-
     return (
-      <div>
-        {products.map(p => (
-          <div
-            key={p.productResId}
-            style={styles.item}
-            onClick={() => onAdd(p)}
-          >
-            <div>{p.productResName}</div>
-            <div>{p.productResPrice.toLocaleString()} VND</div>
-          </div>
-        ))}
+      <div style={styles.listContainer}> 
+      {loading && <p style={styles.statusText}>⏳ Loading products...</p>}
+      {error && <p style={{...styles.statusText, color: "#FF3131"}}>Loading Product Failed!</p>}
+
+       {!loading && !error && products.map(p => (
+        <div
+          key={p.productResId}
+          style={styles.item}
+          onClick={() => onAdd(p)}
+        >
+          <div>{p.productResName}</div>
+          <div>{p.productResPrice.toLocaleString()} VND</div>
+        </div>
+      ))}
       </div>
     );
   }
   
   const styles = {
+    listContainer: {
+      display: "flex",
+      flexDirection: "row",
+      flexWrap: "wrap",
+      alignItems: "flex-start", 
+      width: "100%"
+    },
+
+    statusText: {
+      fontSize: "0.9rem",
+      margin: "10px 0",
+      color: "#32CD32"
+    },
+
     item: {
       border: "1px solid #ddd",
       padding: "12px",
       marginBottom: "8px",
       cursor: "pointer",
       borderRadius: "4px",
-      wordWrap: "break-word", 
-  whiteSpace: "normal"
+      margin: "5px"
     }
   };
   

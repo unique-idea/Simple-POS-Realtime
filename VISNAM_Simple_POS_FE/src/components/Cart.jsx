@@ -49,11 +49,11 @@ function Cart({ items, onCheckout, isSubmitting}) {
 
   const styles = {
     totalSection: { 
-        marginTop: 'auto', 
-        textAlign: 'center', 
-        borderTop: '2px solid #333',
-        width: '100%',
-        paddingTop: '10px'
+        marginTop: "auto", 
+        textAlign: "center", 
+        borderTop: "2px solid #333",
+        width: "100%",
+        paddingTop: "10px"
       },
 
     button: {

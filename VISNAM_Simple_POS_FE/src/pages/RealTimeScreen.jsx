@@ -43,7 +43,7 @@ const RealTimeScreen = () => {
 
   return (
     <div style={styles.container}>
-      <h2>Live Order Monitor</h2>
+      <h2>Orders Realtime</h2>
       <div style={styles.list}>
         {orders.map((order) => (
           <div key={order.orderResId} style={styles.orderCard}>
@@ -70,38 +70,41 @@ const RealTimeScreen = () => {
 
 const styles = {
   container: { 
-    padding: '20px', 
-    backgroundColor: '#1a1a1a', 
-    minHeight: '100vh', 
-    color: 'white' },
+    padding: "20px", 
+    backgroundColor: "#1a1a1a", 
+    minHeight: "100vh", 
+    color: "white" },
 
   list: { 
-    display: 'grid', 
-    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
-    gap: '15px' },
+    display: "grid", 
+    gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", 
+    gap: "15px"
+   },
 
   orderCard: { 
-    backgroundColor: '#333', 
-    padding: '15px', 
-    borderRadius: '8px', 
-    borderLeft: '5px solid #4CAF50' },
+    backgroundColor: "#333", 
+    padding: "15px", 
+    borderRadius: "8px", 
+    borderLeft: "5px solid #4CAF50",
+    marginRight: "5px"
+  },
 
   header: { 
-    display: 'flex', 
-    justifyContent: 'space-between', 
-    marginBottom: '10px', 
-    borderBottom: '1px solid #444', 
-    paddingBottom: '5px' },
+    display: "flex", 
+    justifyContent: "space-between", 
+    marginBottom: "10px", 
+    borderBottom: "1px solid #444", 
+    paddingBottom: "5px" },
 
   items: { 
-    fontSize: '0.9rem', 
-    color: '#ccc' },
+    fontSize: "0.9rem", 
+    color: "#ccc" },
 
   total: { 
-    marginTop: '10px', 
-    textAlign: 'right', 
-    fontWeight: 'bold', 
-    color: '#4CAF50' }
+    marginTop: "10px", 
+    textAlign: "right", 
+    fontWeight: "bold", 
+    color: "#4CAF50" }
 };
 
 export default RealTimeScreen;
