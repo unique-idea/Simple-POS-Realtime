@@ -181,13 +181,13 @@ Docker will:
 
 | Service     | URL                                                                   |
 
-| ----------- | -------------------------------------------------------------------------------- |
+| ----------- | --------------------------------------------------------------------- |
 
-| Frontend  |[http://localhost:5173/order] (For Order Screen)                 |
+| Frontend    |[http://localhost:5173/order] (For Order Screen)                       |
 
-|        | [http://localhost:5173/realtime] (For Realtime Screen)    |
+|             | [http://localhost:5173/realtime] (For Realtime Screen)                |
 
-| Backend API | [http://localhost:5000/swagger/imdex.html](http://localhost:5000/swagger/index.html)                     |
+| Backend API | [http://localhost:5000/swagger/imdex.html] (For View Swagger API)     |
 
 
 
